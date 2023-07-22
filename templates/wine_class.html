@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Class Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body style="background-image: url('https://www.eatthis.com/wp-content/uploads/sites/4/2022/02/wine-by-pool.jpg?quality=82&strip=all');">
+
+    <h1> Wine Class Prediction </h1>
+    <form method="GET" action="/predicted_class">
+        <label for="Alcohol">Alcohol:</label>
+        <input type="text" name="Alcohol" id="Alcohol">
+        <br>
+        <br>
+        <label for="Malic_acid">Malic_acid:</label>
+        <input type="text" name="Malic_acid" id="Malic_acid">
+        <br>
+        <br>
+        <label for="Ash">Ash:</label>
+        <input type="text" name="Ash" id="Ash">
+        <br>
+        <br>
+        <label for="Acl">Acl:</label>
+        <input type="text" name="Acl" id="Acl">
+        <br>
+        <br>
+        <label for="Mg">Mg:</label>
+        <input type="text" name="Mg" id="Mg">
+        <br>
+        <br>
+        <label for="Phenols">Phenols:</label>
+        <input type="text" name="Phenols" id="Phenols">
+        <br>
+        <br>
+        <label for="Flavanoids	">Flavanoids	:</label>
+        <input type="text" name="Flavanoids" id="Flavanoids">
+        <br>
+        <br>
+        <label for="Nonflavanoid_phenols	">Nonflavanoid_phenols	:</label>
+        <input type="text" name="Nonflavanoid_phenols" id="Nonflavanoid_phenols">
+        <br>
+        <br>
+        <label for="Proanth	">Proanth	:</label>
+        <input type="text" name="Proanth" id="Proanth">
+        <br>
+        <br>
+        <label for="Color_int">Color_int:</label>
+        <input type="text" name="Color_int" id="Color_int">
+        <br>
+        <br>
+        <label for="Hue	">Hue:</label>
+        <input type="text" name="Hue" id="Hue">
+        <br>
+        <br>
+        <label for="OD">OD:</label>
+        <input type="text" name="OD" id="OD">
+        <br>
+        <br>
+        <label for="Proline">Proline:</label>
+        <input type="text" name="Proline" id="Proline">
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+        <br>
+        <br>
+        <h4><strong>Your Wine  predicted class will be <b> {{ prediction }} </b>  </strong></h4>
+    </form>
+
+</body>
+
+</html>
